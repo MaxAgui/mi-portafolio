@@ -1,73 +1,130 @@
-# Welcome to your Lovable project
+# 🌐 Portafolio Personal – Desarrollador Flutter / Frontend
 
-## Project info
+Sitio web personal desarrollado con **Vite + React + TypeScript**, creado inicialmente con **Lovable**, para presentar mis proyectos móviles (BolsApp y SAFApp), mi experiencia profesional y mis habilidades como desarrollador **Flutter Frontend**.
 
-**URL**: https://lovable.dev/projects/f612ce59-09d5-477a-8e2f-07166909a9c8
+---
 
-## How can I edit this code?
+## 💡 Descripción
 
-There are several ways of editing your application.
+Este proyecto es mi **portafolio web profesional**, diseñado para mostrar mis aplicaciones publicadas en **Google Play Store**, mis habilidades técnicas y mi experiencia en desarrollo móvil con **Flutter**.  
 
-**Use Lovable**
+Fue creado con **Lovable** como base inicial, utilizando **Vite** para un entorno de desarrollo rápido y moderno, y **React + TailwindCSS** junto con componentes **Radix UI** (inspirados en el ecosistema **shadcn/ui**) para construir una interfaz limpia, accesible y adaptable.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f612ce59-09d5-477a-8e2f-07166909a9c8) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🧠 Tecnologías utilizadas
 
-**Use your preferred IDE**
+- ⚡ **Vite** – Herramienta de build ultrarrápida y ligera.  
+- ⚛️ **React 18 + TypeScript** – Librería moderna para la interfaz y tipado estático.  
+- 🎨 **Tailwind CSS + tailwind-animate + tailwind-merge** – Estilos modernos, animaciones y merges dinámicos.  
+- 🧩 **Radix UI** – Componentes accesibles y personalizables (AlertDialog, Tabs, Tooltip, Dialog, etc.).  
+- 🧮 **Zod** – Validación de esquemas y formularios.  
+- 🧠 **React Hook Form** – Control de formularios y validación declarativa.  
+- 🔄 **React Query (TanStack)** – Manejo eficiente de estado remoto y caché.  
+- 🌗 **next-themes** – Implementación de modo oscuro/claro.  
+- 📊 **Recharts** – Visualización de datos interactiva.  
+- 🧱 **Lucide Icons** – Iconografía moderna.  
+- 🧑‍💻 **ESLint + TypeScript ESLint** – Linter y tipado estricto.  
+- 🚀 **PostCSS / Autoprefixer** – Compatibilidad y procesamiento CSS.  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## ⚙️ Instalación y ejecución
 
-Follow these steps:
+Para clonar y ejecutar este proyecto localmente:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+# 1️⃣ Clonar el repositorio
+git clone https://github.com/tuusuario/mi-portafolio.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# 2️⃣ Entrar en el directorio
+cd mi-portafolio
 
-# Step 3: Install the necessary dependencies.
-npm i
+# 3️⃣ Instalar dependencias
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 4️⃣ Ejecutar en modo desarrollo
 npm run dev
+
+# 5️⃣ Abrir en el navegador
+http://localhost:5173
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🚀 Compilación para producción
 
-**Use GitHub Codespaces**
+Genera los archivos optimizados para despliegue:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run build
+```
 
-## What technologies are used for this project?
+El contenido compilado se guarda en la carpeta `/dist`, lista para desplegar en **Vercel**, **Netlify** o cualquier hosting estático.
 
-This project is built with:
+También puedes probar el build localmente:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```bash
+npm run preview
+```
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/f612ce59-09d5-477a-8e2f-07166909a9c8) and click on Share -> Publish.
+## 🧾 Características principales
 
-## Can I connect a custom domain to my Lovable project?
+- 🌙 **Modo oscuro y claro** con persistencia del tema.  
+- 🧑‍💻 **Secciones de portafolio**: sobre mí, habilidades, proyectos y contacto.  
+- 🧭 **Navegación SPA (React Router DOM)**.  
+- 🧱 **Diseño responsive (mobile-first)**.  
+- 🧩 **Componentes accesibles basados en Radix UI**.  
+- ⚙️ **Validaciones con Zod y React Hook Form**.  
+- 📊 **Gráficos y visualizaciones interactivas (Recharts)**.  
+- 🧹 **Código limpio y modular (TypeScript + ESLint).**
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🧰 Estructura básica del proyecto
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+```
+vite_react_shadcn_ts/
+├── src/
+│   ├── components/        # Componentes reutilizables (UI y funcionales)
+│   ├── pages/             # Páginas principales del sitio
+│   ├── hooks/             # Hooks personalizados
+│   ├── lib/               # Utilidades y configuraciones globales
+│   ├── styles/            # Archivos Tailwind y estilos globales
+│   └── main.tsx           # Punto de entrada de la aplicación
+├── public/                # Recursos estáticos
+├── index.html             # HTML base
+├── package.json           # Dependencias y scripts
+└── tailwind.config.js     # Configuración de Tailwind
+```
+
+---
+
+## 🌍 Demo en línea
+
+Puedes ver la versión desplegada de este portafolio aquí:  
+🔗 [https://tudominio.com](https://tudominio.com)
+
+---
+
+## 👨‍💻 Autor
+
+**[Tu nombre completo]**  
+Desarrollador Flutter | Frontend Developer  
+📧 [tuemail@correo.com](mailto:tuemail@correo.com)  
+🔗 [LinkedIn](https://linkedin.com/in/tuusuario) • [GitHub](https://github.com/tuusuario)
+
+---
+
+## 🪪 Licencia
+
+Este proyecto se distribuye bajo la **licencia MIT**, permitiendo su uso y modificación con fines personales o educativos.
+
+---
+
+## ❤️ Créditos
+
+Proyecto inicialmente generado con **[Lovable](https://lovable.dev/)**  
+y extendido con **Vite**, **React**, **TailwindCSS** y componentes **Radix UI** inspirados en el ecosistema **shadcn/ui**.
