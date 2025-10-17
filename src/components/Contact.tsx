@@ -12,25 +12,37 @@ const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Basic validation
+
+    // Validación básica
     if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
       toast.error("Por favor completa todos los campos");
       return;
     }
 
-    // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       toast.error("Por favor ingresa un email válido");
       return;
     }
 
-    // Simulate form submission
-    toast.success("¡Mensaje enviado! Te contactaré pronto.");
-    setFormData({ name: "", email: "", message: "" });
+    try {
+      const response = await fetch("https://formspree.io/f/mqaynnlj", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        toast.success("¡Mensaje enviado! Te contactaré pronto.");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        toast.error("Error al enviar el mensaje. Intenta más tarde.");
+      }
+    } catch (error) {
+      toast.error("Ocurrió un error al enviar el formulario.");
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -56,14 +68,14 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "/in/manuel-aguilar",
-      href: "https://linkedin.com/in/manuel-aguilar",
+      value: "/in/manumaxaguilar",
+      href: "https://www.linkedin.com/in/manumaxaguilar",
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "@manuelmaximo",
-      href: "https://github.com/manuelmaximo",
+      value: "MaxAgui",
+      href: "https://github.com/MaxAgui",
     },
   ];
 

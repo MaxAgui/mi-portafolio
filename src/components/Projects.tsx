@@ -1,6 +1,6 @@
 import { ExternalLink, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import bolsappPreview from "@/assets/bolsapp-preview.jpg";
+import bolsappPreview from "@/assets/image1.jpg";
 import safappPreview from "@/assets/safapp-preview.jpg";
 
 const Projects = () => {
@@ -11,7 +11,7 @@ const Projects = () => {
         "Aplicación móvil para la compra, venta y monitoreo de acciones en la Bolsa de Valores de Lima. Participé en el desarrollo del frontend en Flutter, implementando componentes de interfaz, flujos de navegación y consumo de APIs financieras en tiempo real.",
       image: bolsappPreview,
       technologies: ["Flutter", "Dart", "REST APIs", "Material Design"],
-      playStoreUrl: "https://play.google.com/store/apps/details?id=pe.com.coril.bolsapp",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=coril.sab.sabapp&hl=es_PE",
       features: [
         "Componentes de interfaz modernos y fluidos",
         "Flujos de navegación intuitivos",

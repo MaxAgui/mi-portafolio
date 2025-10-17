@@ -6,12 +6,12 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Github,
-      href: "https://github.com/manuelmaximo",
+      href: "https://github.com/MaxAgui",
       label: "GitHub",
     },
     {
       icon: Linkedin,
-      href: "https://linkedin.com/in/manuel-aguilar",
+      href: "https://www.linkedin.com/in/manumaxaguilar",
       label: "LinkedIn",
     },
     {
