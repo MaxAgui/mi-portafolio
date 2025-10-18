@@ -34,7 +34,7 @@ const Hero = () => {
 
           <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6">
             Manuel Máximo{" "}
-            <span className="text-gradient">Aguilar Llacsa</span>
+            <span className="text-gradient">Aguilar</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -56,13 +56,12 @@ const Hero = () => {
               asChild
             >
               <a
-                href="https://example.com/cv.pdf"
-                download
+                href="CVManuelAguilar.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Download className="mr-2 h-4 w-4" />
-                Descargar CV
+                Ver CV
               </a>
             </Button>
           </div>
