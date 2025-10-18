@@ -1,7 +1,7 @@
 import { ExternalLink, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import bolsappPreview from "@/assets/image1.jpg";
-import safappPreview from "@/assets/safapp-preview.jpg";
+import safappPreview from "@/assets/image2.jpg";
 
 const Projects = () => {
   const projects = [
