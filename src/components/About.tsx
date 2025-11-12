@@ -1,4 +1,5 @@
 import { Code2, Smartphone, Zap } from "lucide-react";
+import linkedinFoto from "@/assets/linkedin-foto.jpg";
 
 const About = () => {
   const highlights = [
@@ -37,8 +38,7 @@ const About = () => {
               <div className="flex justify-center md:justify-start mb-8">
                 <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-primary/30 shadow-lg">
                   <img
-                    src="https://media.licdn.com/dms/image/v2/D4E03AQHwsm45wPmdwQ/profile-displayphoto-crop_800_800/B4EZn0VlhNGYAI-/0/1760740924021?e=1762387200&v=beta&t=CgdOX2K_enzm5KOPsM5DkCZBl9Nss2-ER_454INeGlI"
-                    alt="Foto de perfil del desarrollador Flutter"
+                    src={linkedinFoto}
                     className="w-full h-full object-cover"
                   />
                 </div>
